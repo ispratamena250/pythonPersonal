@@ -1,9 +1,9 @@
 #Exercício 2 - extrair texto
 from pypdf import PdfReader
 
-reader = PdfReader("/home/isaac/Documents/Livros/Matematica/ComplexVariablesAndapplications_6thEdition--Brown-Churchill.pdf")
+reader = PdfReader("/home/isaac/Documents/Livros/Computacao/swebok-v4.pdf")
 
-page = reader.pages[0]
+page = reader.pages[100]
 text = page.extract_text()
 
 print(text)
